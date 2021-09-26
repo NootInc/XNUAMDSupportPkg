@@ -1,0 +1,18 @@
+[package]
+name = "xnu_amd_support_pkg"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[profile.dev]
+lto = "thin"
+
+[profile.release]
+lto = "thin"
+
+[dependencies]
+uefi = { version = "0.12.0", features = ["exts", "logger"] }
+uefi-services = "0.9.0"
+log = { version = "0.4.14", default-features = false }
+raw-cpuid = "10.2.0"
+amd64 = { path = "../amd64" }
