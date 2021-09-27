@@ -3,6 +3,8 @@ name = "xnu_amd_support_pkg"
 version = "0.1.0"
 edition = "2021"
 publish = false
+license = "CC BY-NC-ND 4.0"
+license-file = "LICENSE"
 
 [profile.dev]
 lto = "thin"
