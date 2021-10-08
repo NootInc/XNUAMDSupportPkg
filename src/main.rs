@@ -11,13 +11,7 @@
 
 #![no_std]
 #![no_main]
-#![deny(
-    warnings,
-    clippy::all,
-    clippy::pedantic,
-    clippy::nursery,
-    clippy::cargo
-)]
+#![warn(warnings, clippy::cargo)]
 #![feature(abi_efiapi)]
 #![feature(allocator_api)]
 #![feature(core_intrinsics)]
@@ -26,7 +20,7 @@ use amd64::registers::msr::Msr;
 use log::{error, info};
 use raw_cpuid::CpuId;
 use uefi::{
-    prelude::{entry, Boot, Handle, Status, SystemTable},
+    prelude::{Boot, entry, Handle, Status, SystemTable},
     ResultExt,
 };
 
