@@ -20,7 +20,7 @@ use amd64::registers::msr::Msr;
 use log::{error, info};
 use raw_cpuid::CpuId;
 use uefi::{
-    prelude::{Boot, entry, Handle, Status, SystemTable},
+    prelude::{entry, Boot, Handle, Status, SystemTable},
     ResultExt,
 };
 

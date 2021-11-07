@@ -16,4 +16,4 @@ uefi = { version = "0.12.0", features = ["exts", "logger"] }
 uefi-services = "0.9.0"
 log = { version = "0.4.14", default-features = false }
 raw-cpuid = "10.2.0"
-amd64 = { path = "../amd64" }
+amd64 = { path = "../AMD64" }
